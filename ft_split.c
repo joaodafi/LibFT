@@ -6,7 +6,7 @@
 /*   By: jomiguel < jomiguel@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 10:45:23 by jomiguel          #+#    #+#             */
-/*   Updated: 2021/09/10 12:21:14 by jomiguel         ###   ########.fr       */
+/*   Updated: 2022/05/02 16:26:15 by jomiguel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,18 @@ static size_t	ft_wlen(int w_start, size_t w_end)
 {
 	return (w_end - (size_t)w_start);
 }
+
+/**
+ * @brief Allocates (with malloc(3)) and returns an array of strings obtained by
+ * splitting ’s’ using the character ’c’ as a delimiter
+ * The array must be ended by a NULL pointer
+ *
+ * @param *s The string to be split
+ * @param c The delimiter character
+ *
+ * @return The array of new strings resulting from the split
+ * NULL if the allocation fails
+ */
 
 char	**ft_split(char const *s, char c)
 {

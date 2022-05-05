@@ -6,7 +6,7 @@
 /*   By: jomiguel < jomiguel@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 14:42:06 by jomiguel          #+#    #+#             */
-/*   Updated: 2022/04/30 17:49:54 by jomiguel         ###   ########.fr       */
+/*   Updated: 2022/05/02 11:23:41 by jomiguel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
-char	*ft_strnstr(const char *str, const char *ptr, size_t n);
+char	*ft_strnstr(const char *big, const char *little, size_t n);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *src);

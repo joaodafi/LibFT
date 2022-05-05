@@ -6,7 +6,7 @@
 /*   By: jomiguel < jomiguel@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 16:56:00 by jomiguel          #+#    #+#             */
-/*   Updated: 2021/09/10 17:26:57 by jomiguel         ###   ########.fr       */
+/*   Updated: 2022/05/02 16:35:47 by jomiguel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,17 @@ static char	*ft_alocation(char *pt, int n, size_t signal, size_t len)
 		pt[0] = (n % 10) + '0';
 	return (pt);
 }
+
+/**
+ * @brief Allocates (with malloc(3)) and returns a string representing the
+ * integer received as an argument
+ * Negative numbers must be handled
+ *
+ * @param n the integer to convert
+ *
+ * @return The string representing the integer
+ * NULL if the allocation fails
+ */
 
 char	*ft_itoa(int n)
 {

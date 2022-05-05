@@ -6,11 +6,22 @@
 /*   By: jomiguel < jomiguel@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 14:35:21 by jomiguel          #+#    #+#             */
-/*   Updated: 2021/08/13 11:38:48 by jomiguel         ###   ########.fr       */
+/*   Updated: 2022/05/01 12:58:30 by jomiguel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Copies n bytes from memory area src to memory area dest
+ * the copy is always done in a non-destructive manner
+ *
+ * @param *dest Adress of the destination where content is copied to
+ * @param *src Adress of the source data to copy from
+ * @param n Number of bytes to be copied
+ *
+ * @return Returns the pointer of dest
+ */
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

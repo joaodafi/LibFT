@@ -6,11 +6,27 @@
 /*   By: jomiguel < jomiguel@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 13:47:19 by jomiguel          #+#    #+#             */
-/*   Updated: 2021/09/13 20:32:58 by jomiguel         ###   ########.fr       */
+/*   Updated: 2022/05/01 13:09:31 by jomiguel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Appends string src to the end of dst
+ * It will append at most dstsize - strlen(dst) - 1 characters
+ * It will then NUL-terminate, unless dstsize is 0 or the original dst string
+ * was longer than dstsize
+ * If the src and dst strings overlap, the behavior is undefined
+ *
+ * @param *dst Adress of the destination array, which should contain a C string,
+ * and should be large enough to contain the concatenated resulting string
+ * @param src This is the string to be appended
+ * @param size Full size of the destination buffer
+ *
+ * @return The total length of the string they tried to create
+ * That means the initial length of dst + the length of src
+ */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
