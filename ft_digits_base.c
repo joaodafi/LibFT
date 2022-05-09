@@ -6,7 +6,7 @@
 /*   By: jomiguel < jomiguel@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 11:08:05 by jomiguel          #+#    #+#             */
-/*   Updated: 2022/05/09 15:19:47 by jomiguel         ###   ########.fr       */
+/*   Updated: 2022/05/09 16:49:03 by jomiguel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ size_t	ft_digits_base(unsigned int n, char *base)
 		nbr /= ft_strlen(base);
 		len++;
 	}
-	return(len);
+	return (len);
 }
