@@ -6,11 +6,11 @@
 #    By: jomiguel < jomiguel@student.42sp.org.br    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/10 16:02:43 by jomiguel          #+#    #+#              #
-#    Updated: 2022/05/09 12:03:31 by jomiguel         ###   ########.fr        #
+#    Updated: 2022/05/09 16:41:37 by jomiguel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SCRS = ft_isalpha.c			\
+SRCS = ft_isalpha.c			\
 		ft_isdigit.c		\
 		ft_isalnum.c		\
 		ft_isascii.c		\
@@ -61,7 +61,7 @@ CFLAGS = -Wall -Werror -Wextra
 	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 ${NAME}:	${OBJS}
-	ar rc ${NAME} ${OBJS}
+	ar rcs ${NAME} ${OBJS}
 
 all:	${NAME}
 
